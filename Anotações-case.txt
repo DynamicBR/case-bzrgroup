@@ -1,0 +1,13 @@
+Precatório é uma dívida do poder público
+Cada precatório tem um ID do processo, no padrão CNJ.
+Orgão pagador se chama ente devedor
+Condição:
+    Precatório de 02/04 deve ser pago até 31/12 do ano seguinte.
+        Se o prazo estourar deve ser pago em dois anos. No dia do prazo anterior.
+
+Processo:
+    1. Tribunal manda email de pagamentos.json dos últimos 7 dias
+    2. Script importa arquivo somando cada pagamento feito
+    2.1 Condição:
+        Caso falha a importação. Roda-se o script com o mesmo arquivo
+    

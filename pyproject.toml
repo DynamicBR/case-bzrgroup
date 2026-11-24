@@ -1,0 +1,20 @@
+[project]
+name = "case-python-bzrgroup"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "DynamicBR", email = "dmitrijnferreira@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.3.3",
+    "pytest>=9.2.0",
+]
+
+[project.scripts]
+case-python-bzrgroup = "case_python_bzrgroup:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
