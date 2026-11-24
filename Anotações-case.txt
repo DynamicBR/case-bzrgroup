@@ -10,4 +10,40 @@ Processo:
     2. Script importa arquivo somando cada pagamento feito
     2.1 Condição:
         Caso falha a importação. Roda-se o script com o mesmo arquivo
-    
+    3. Uma vez por semana é enviado os precatórios no no tribunal.csv
+    3.1 Abre-se hub.csv para fazer um de para do nome do ente e o número de processos referente ao arquivo tribunal.csv 
+    4 O sistema calcula o prazo de pagamento referente a data de apresentação
+    4.1 A equipe usa este prazo para priorizar a carteira
+    5. Quando não se importa o evento. O script ignora seguindo fluxo. Sem aviso do que aconteceu
+
+Problema:
+    A equipe acha que os números do arquivo hub.csv não correspondem com o arquivo tribunal.csv.
+
+Proposta:
+    Realizar:
+        Diagnóstico:
+            Listar problemas
+            Mostrar evidência - arquivo registro linha
+            Mostrar impacto
+            Mostrar causa
+            Mostrar consequência
+            Ordenar do mais grave ao menos grave
+        Limpeza:
+            Escrever um script python para:
+                Ler os arquivos
+                Construir base confiável
+                Relatar as alterações e dúvidas
+                Justificar as alterações
+                OBS: Os arquivos originais não podem ser alterados
+        Prevenção:
+            Fazer proposta de alteração do processo
+        Dúvidas:
+            Faça as perguntas referente à implementação ao tribunal e a operação
+
+OBS: Não existe lista fechada de problemas. Encontrar menos problemas mas com evidência e impacto bem explicados, vale mais que uma lista longa sem justificativa
+
+Entregáveis:
+    Link do repo
+    Diagnóstico
+    Script
+    README sobre como executar o projeto
