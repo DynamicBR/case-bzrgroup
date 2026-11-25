@@ -18,4 +18,6 @@
 1. O arquivo tribunal.csv não estava suportando acentos. Então tive que colocar no formato `ISO-8859-1`. Não pude colocar o padrão `utf-8`. Pois não conseguia abrir o arquivo dentro da pasta.
 2.  O número  do processo `0012345-10.2019.8.26.0053`. Estavá com o prazo errado.
    Prazo antigo: `2027-12-31`, prazo novo: `2026-12-31`. À alteração foi feita por que a data de apresentação foi `2025-04-02`. De acordo com o pdf na aba contexto. Os precatórios apresentados até o dia 2 de abril. Só acrescentam um ano.
-3. 
+3.  Em todos os arquivos .csv e .json fiz um tratamento no campo processo, unificando os nomes e removendo a formatação CNJ. Para que no futuro eu consiga mesclar todas estes dados em uma única base.
+4. Em todos os arquivos .csv e o arquivo pagamentos_implementacao.json realizei o tratamento de unificação dos números para se adaptar ao formato brasileiro e evitar erros de caractéres no futuro.
+5. `
