@@ -47,3 +47,7 @@ Entregáveis:
     Diagnóstico
     Script
     README sobre como executar o projeto
+
+
+OBS: Quando der o erro UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 72: invalid continuation byte
+Use o enconding="ISO-8859-1"
