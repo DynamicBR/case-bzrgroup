@@ -11,3 +11,16 @@
 - `\Z`	Fim absoluto da string	Igual ao `$`, mas ignora modo multilinha	`0053\Z` exige terminar com `"0053"`
 - `\1,` `\2...`	Retrovisor (backreference)	Repete o texto capturado no grupo `(...)`	`(\w+)\s+\1` acha palavras repetidas `("de de")`
 - `\` + `símbolo`	Escape de caractere especial	Trata `.`, `-`, `+`, `?`, `\` como texto literal	`\.` acha um ponto de verdade (e não "qualquer coisa")
+
+# Metacaractéres
+- `[]` Um conjunto de caracteres
+- `\` Indica uma sequência especial (também pode ser usado para escapar caracteres especiais)
+- `.` Qualquer caractere (exceto o caractere de nova linha)
+- `^` Começa com
+- `$` Termina com
+- `*` Zero ou mais ocorrências
+- `+` Uma ou mais ocorrências
+- `?` Zero ou uma ocorrências
+- `{}` Exatamente o número especificado de ocorrências
+- `|` Um ou outro
+- `()` Capturar e agrupar
