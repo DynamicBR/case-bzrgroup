@@ -20,4 +20,6 @@
    Prazo antigo: `2027-12-31`, prazo novo: `2026-12-31`. À alteração foi feita por que a data de apresentação foi `2025-04-02`. De acordo com o pdf na aba contexto. Os precatórios apresentados até o dia 2 de abril. Só acrescentam um ano.
 3.  Em todos os arquivos .csv e .json fiz um tratamento no campo processo, unificando os nomes e removendo a formatação CNJ. Para que no futuro eu consiga mesclar todas estes dados em uma única base.
 4. Em todos os arquivos .csv e o arquivo pagamentos_implementacao.json realizei o tratamento de unificação dos números para se adaptar ao formato brasileiro e evitar erros de caractéres no futuro.
-5. `
+5. No pagamentos_implementacao.json foi necessário colocar um filtro na coluna de valor e remover valores vazios. Para conseguir justar as bases no futuro.
+6. Criei a base fazendo um LEFT JOIN cruzando três bases, pagamentos_implementacao.json, apresentacoes_implementacao.json e tribunal.csv
+7. 
